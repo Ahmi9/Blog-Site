@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyBlog</div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="main">
+            <div class="article1 articles">
+                <img src="https://www.w3schools.com/w3images/woods.jpg" alt="img" class="left-imgs">
+                <h2>Heading</h2>
+                <h4>Description: April 7, 2014</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eligendi quos voluptatibus fuga similique dignissimos, ducimus qui laborum, laboriosam minima adipisci, quaerat commodi aspernatur expedita. Ipsum maiores sequi magni ipsam consequuntur rem, facilis laborum hic incidunt, quisquam voluptates vel corrupti.</p>
+                <div class="bottom">
+                    <button class="read-more">Read More</button>
+                    <span class="comments">Comments 03</span>
+                </div>
+            </div>
+            <div class="article2 articles">
+                <img src="https://www.w3schools.com/w3images/bridge.jpg" alt="img" class="left-imgs">
+                <h2>Heading</h2>
+                <h4>Description: April 2, 2014</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eligendi quos voluptatibus fuga similique dignissimos, ducimus qui laborum, laboriosam minima adipisci, quaerat commodi aspernatur expedita. Ipsum maiores sequi magni ipsam consequuntur rem, facilis laborum hic incidunt, quisquam voluptates vel corrupti.</p>
+                <div class="bottom">
+                    <button class="read-more">Read More</button>
+                    <span class="comments">Comments 03</span>
+                </div>
+            </div>
+        </div>
+        <article>
+            <div class="article3 articles">
+                <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="img" class="left-imgs">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, id.</p>
+            </div>
+            <div class="popular">
+                <h2>Popular Posts</h2>
+                <div class="post">
+                    <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="img" class="left-imgs">
+                    <p><strong>Title</strong></p>
+                    <h4>Description: April 7, 2014</h4>
+                </div>
+                <div class="post">
+                    <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="img" class="left-imgs">
+                    <p><strong>Title</strong></p>
+                    <h4>Description: April 2, 2014</h4>
+                </div>
+                <div class="post">
+                    <img src="https://www.w3schools.com/w3images/skies.jpg" alt="img" class="left-imgs">
+                    <p><strong>Title</strong></p>
+                    <h4>Description: April 1, 2014</h4>
+                </div>
+            </div>
+            <div class="tags popular">
+                <h2>Tags</h2>
+                <span class="tag">Travel</span>
+                <span class="tag">New York</span>
+                <span class="tag">London</span>
+                <span class="tag">IKEA</span>
+                <span class="tag">NORWAY</span>
+                <span class="tag">DIY</span>
+                <span class="tag">Ideas</span>
+                <span class="tag">Baby</span>
+                <span class="tag">Family</span>
+                <span class="tag">News</span>
+                <span class="tag">Clothing</span>
+                <span class="tag">Shopping</span>
+                <span class="tag">Sports</span>
+                <span class="tag">Games</span>
+            </div>
+        </article>
+    </div>
+
+
+
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
